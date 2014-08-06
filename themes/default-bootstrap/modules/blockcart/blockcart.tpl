@@ -142,7 +142,7 @@
 						<div class="cart-prices">
 							<div class="cart-prices-line first-line">
 								<span class="price cart_block_shipping_cost ajax_cart_shipping_cost">
-									{if $shipping_cost_float == 0}
+									{if $shipping_cost_float == 0 && $products }
 										{l s='Free shipping!' mod='blockcart'}
 									{else}
 										{$shipping_cost}
